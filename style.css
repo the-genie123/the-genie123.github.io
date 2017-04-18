@@ -87,7 +87,7 @@ nav a:hover, nav a.active{
 
 /*alt-content*/
 
-.alt-content, .calc{
+.alt-content{
   width:96%;
   float:left;
   border-radius: 5px;
@@ -116,7 +116,7 @@ nav a:hover, nav a.active{
   list-style-type: square;
 }
 
-/*onerm-content*/
+/*calcutor-content*/
 .calc{
   width:96%;
   float:left;
@@ -229,7 +229,7 @@ footer p{
 
 /*compatibility*/
 
-@media only screen and (min-width:150px) and (max-width:768px)
+@media only screen and (min-width:150px) and (max-width:600px)
 {
 
 body{
