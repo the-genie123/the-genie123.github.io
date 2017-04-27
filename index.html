@@ -7,6 +7,18 @@
   	<meta name="keywords" content="powerlifting, squat, bench, deadlift">
   	<meta name="author" content="Bilal Shabir">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery/jquery-3.2.1.min.js"></script>
+		<script src="script/dropdown.js"></script>
+		<script>
+			$(document).ready(function(){
+			    $(".bottombar a, .topbar a").hover (function(){
+			        $(this).css("background-color", "grey");
+			        });
+					$(".bottombar a, .topbar a").mouseleave (function(){
+			        $(this).css("background-color", "");
+			        });
+			});
+		</script>
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -25,16 +37,20 @@
 				</div>
 			</div>
 
-				<nav>
-					<ul>
-						<li><a class="active" href="index.html">Home</a></li>
-						<li><a href="squat.html">Squat</a></li>
-						<li><a href="bench.html">Bench Press</a></li>
-						<li><a href="deadlift.html">Deadlift</a></li>
-						<li><a href="gyms.html">Nearby Gyms</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					</ul>
-				</nav>
+			<nav>
+				<ul>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="#">How To▼</a>
+							<ul>
+								<li><a href="squat.html">Squat</a></li>
+								<li><a href="bench.html">Bench Press</a></li>
+								<li><a href="deadlift.html">Deadlift</a></li>
+							</ul>
+					</li>
+					<li><a href="gyms.html">Nearby Gyms</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
 
 				<div class="home-video">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/j8s8GGBOPB8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen ></iframe>

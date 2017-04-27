@@ -12,7 +12,7 @@
 		<script>
 		$(document).ready(function(){
 			$(".btn").click(function(){
-				$(".map").toggle();
+				$(".map").slideToggle();
 			});
 		});
 		</script>
@@ -49,7 +49,7 @@
 
 			<section class="calc">
 				<h2>Gyms Near You</h2>
-				<input class="btn" type="button" value="Find Gyms" />
+				<input class="btn" type="button" value="Find Gyms"/>
 				<div class="map">
 					<p>Your Location is:<div id="location"></div></p>
 					<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=gym&key=AIzaSyAUO5-CIfFP-oBCm8gWS_M_UmLsZWTEhHw" allowfullscreen></iframe>

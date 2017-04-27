@@ -11,35 +11,53 @@ body{
 }
 
 /*Navgation bars*/
-nav{
-  background-color: red;
-  padding:10px;
-  border-radius: 5px;
+nav {
+  padding:5px;
 }
 
 nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:10px;
+  list-style: none;
+  background: red;
+  border-radius: 5px;
 }
 
-nav li{
-  text-transform: uppercase;
-  display: inline;
-}
-
-nav a{
+nav ul li{
   display: inline-block;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a{
+  display:inline-block;
+  height:45px;
+  padding:0 8px 0 8px;
   color: white;
-  border-radius: 8px;
+  line-height: 43px;
+  text-decoration: none;
+  transition: background 0.5s linear 0s, color 0.5s linear 0s;
+  border-radius: 5px;
+}
+
+
+nav ul ul {
+  position: absolute;
+  width:125px;
+  display: none;
+  background: red;
+  text-align: center;
+}
+
+nav ul ul li{
+  display: block;
+  background: red;
+  border-radius: 5px;
 }
 
 nav a:hover, nav a.active{
   color:white;
   background-color: black;
+  border-radius: 5px;
 }
 
 /*banner*/
@@ -246,6 +264,10 @@ nav ul li {
 
 nav a:hover, nav a.active, nav a:link{
   display: block;
+}
+nav ul ul {
+  position: relative;
+  width:auto;
 }
 
 /*home-page*/

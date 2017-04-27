@@ -1,0 +1,92 @@
+.page{
+  background-color: #D3D3D3;
+}
+
+/*Page setting*/
+body{
+  width:95%;
+  margin:0px auto;
+  clear: both;
+}
+
+nav {
+  padding:5px;
+}
+
+nav ul{
+  margin:0;
+  padding:10px;
+  list-style: none;
+  background: red;
+  border-radius: 5px;
+}
+
+nav ul li{
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav ul li a{
+  display:inline-block;
+  height:45px;
+  padding:0 8px 0 8px;
+  color: white;
+  line-height: 43px;
+  text-decoration: none;
+  transition: background 0.5s linear 0s, color 0.5s linear 0s;
+  border-radius: 5px;
+}
+
+
+nav ul ul {
+  position: absolute;
+  width:100px;
+  display: none;
+  background: red;
+}
+
+nav ul ul li{
+  display: block;
+  background: red;
+  border-radius: 5px;
+}
+
+nav a:hover, nav a.active{
+  color:white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width:150px) and (max-width:600px)
+{
+
+body{
+  width:95%;
+  font-size: 95%;
+}
+
+
+/*Navgation bars*/
+nav ul li {
+  display: block;
+  padding-bottom: 5px;
+}
+
+nav a:hover, nav a.active{
+  display: block;
+}
+nav ul li a{
+  display:block;
+  height:45px;
+  width: 150px;
+  color: white;
+  line-height: 43px;
+  text-decoration: none;
+  transition: background 0.5s linear 0s, color 0.5s linear 0s;
+}
+nav ul ul {
+position: relative;
+}
+
+
+}
