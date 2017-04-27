@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en" class="page">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="A website for some powerlifting basics">
+		<meta name="keywords" content="powerlifting, squat, bench, deadlift">
+		<meta name="author" content="Bilal Shabir">
+		<script src="script/calculator.js"></script>
+		<title>Wilks-Calculator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+			<div class="banner">
+				<a href="index.html">
+				<img src="img/logo.svg" alt="Logo" height="100">
+				</a>
+				<div class="social-media">
+					<a href="http://facebook.com" target="_blank">
+						<img src="img/fb-logo.png" alt="Facebook" width="45" height="45">
+					</a>
+					<a href="http://twitter.com" target="_blank">
+					<img src="img/twitter-logo.png" alt="Twitter" width="45" height="45">
+					</a>
+				</div>
+			</div>
+
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="squat.html">Squat</a></li>
+						<li><a href="bench.html">Bench Press</a></li>
+						<li><a href="deadlift.html">Deadlift</a></li>
+						<li><a href="gyms.html">Nearby Gyms</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+
+			<section class="calc">
+				<h2>Wilks Calculator</h2>
+				<div class="form-wrap">
+					<form>
+							<fieldset>
+								<label>Gender:</label>
+								<select id = "gender">
+									<option value="female">Female</option>
+									<option value="male">Male</option>
+								</select>
+
+								<label>Weight Unit:</label>
+								<select id = "weightunit">
+									<option value="kg">Kilogram</option>
+									<option value="lbs">Pounds</option>
+								</select>
+
+								<label>Body Weight:</label>
+								<input id="bodyweight" onkeydown="if (event.keyCode === 13) wilksfunc();">
+								<label>Total Weight Lifted:</label>
+								<input id="totalweight" onkeydown="if (event.keyCode === 13) wilksfunc();">
+							</fieldset>
+
+							<fieldset>
+								<input class="btn" type="button" onclick = "wilksfunc()" value="Calculate" />
+							</fieldset>
+					</form>
+				</div>
+				<div id="result"></div>
+			</section>
+
+			<footer>
+				<p>
+					Copyright &copy; 2017 Copyright Holder All Rights Reserved.
+				</p>
+			</footer>
+	</body>
+
+
+
+</html>

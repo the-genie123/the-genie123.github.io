@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" class="page">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="A website for some powerlifting basics">
+		<meta name="keywords" content="powerlifting, squat, bench, deadlift">
+		<meta name="author" content="Bilal Shabir">
+		<script src="jquery/jquery-3.2.1.min.js"></script>
+		<script src="script/getlocation.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+		<script>
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".map").toggle();
+			});
+		});
+		</script>
+		<title>Gyms Near You</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+			<div class="banner">
+				<a href="index.html">
+				<img src="img/logo.svg" alt="Logo" height="100">
+				</a>
+				<div class="social-media">
+					<a href="http://facebook.com" target="_blank">
+						<img src="img/fb-logo.png" alt="Facebook" width="45" height="45">
+					</a>
+					<a href="http://twitter.com" target="_blank">
+					<img src="img/twitter-logo.png" alt="Twitter" width="45" height="45">
+					</a>
+				</div>
+			</div>
+
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="squat.html">Squat</a></li>
+						<li><a href="bench.html">Bench Press</a></li>
+						<li><a href="deadlift.html">Deadlift</a></li>
+						<li><a class="active" href="gyms.html">Nearby Gyms</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+
+			<section class="calc">
+				<h2>Gyms Near You</h2>
+				<input class="btn" type="button" value="Find Gyms" />
+				<div class="map">
+					<p>Your Location is:<div id="location"></div></p>
+					<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=gym&key=AIzaSyAUO5-CIfFP-oBCm8gWS_M_UmLsZWTEhHw" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<footer>
+				<p>
+					Copyright &copy; 2017 Copyright Holder All Rights Reserved.
+				</p>
+			</footer>
+	</body>
+
+
+
+</html>
