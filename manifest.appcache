@@ -3,6 +3,11 @@ CACHE MANIFEST
 
 CACHE:
 style.css
+img/logo.svg
+img/fb-logo.png
+img/twitter-logo.png
+jquery/jquery-3.2.1.min.js
+script/dropdown.js
 index.html
 
 NETWORK:
