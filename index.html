@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="page">
+<html lang="en" class="page" manifest="manifest.appcache">
 	<head>
 		<meta charset="UTF-8">
   	<meta name="description" content="A website for some powerlifting basics">
@@ -9,16 +9,6 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="jquery/jquery-3.2.1.min.js"></script>
 		<script src="script/dropdown.js"></script>
-		<script>
-			$(document).ready(function(){
-			    $(".bottombar a, .topbar a").hover (function(){
-			        $(this).css("background-color", "grey");
-			        });
-					$(".bottombar a, .topbar a").mouseleave (function(){
-			        $(this).css("background-color", "");
-			        });
-			});
-		</script>
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -40,7 +30,7 @@
 			<nav>
 				<ul>
 					<li><a class="active" href="index.html">Home</a></li>
-					<li><a href="#">How To▼</a>
+					<li><a href="#">How To⇩</a>
 							<ul>
 								<li><a href="squat.html">Squat</a></li>
 								<li><a href="bench.html">Bench Press</a></li>

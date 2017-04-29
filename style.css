@@ -12,12 +12,12 @@ body{
 
 /*Navgation bars*/
 nav {
-  padding:5px;
+  padding:0px;
 }
 
 nav ul{
   margin:0;
-  padding:10px;
+  padding:8px;
   list-style: none;
   background: red;
   border-radius: 5px;
@@ -31,9 +31,10 @@ nav ul li{
 nav ul li a{
   display:inline-block;
   height:45px;
-  padding:0 8px 0 8px;
+  width: auto;
+  padding:0 10px 0 10px;
   color: white;
-  line-height: 43px;
+  line-height: 45px;
   text-decoration: none;
   transition: background 0.5s linear 0s, color 0.5s linear 0s;
   border-radius: 5px;
@@ -42,16 +43,15 @@ nav ul li a{
 
 nav ul ul {
   position: absolute;
-  width:125px;
+  width:auto;
   display: none;
-  background: red;
+  background: #ff7400;
   text-align: center;
 }
 
 nav ul ul li{
   display: block;
-  background: red;
-  border-radius: 5px;
+  background: #ff7400;
 }
 
 nav a:hover, nav a.active{
@@ -64,7 +64,6 @@ nav a:hover, nav a.active{
 .banner{
   text-align: left;
 }
-
 
 .social-media{
   float: right;
@@ -135,7 +134,7 @@ nav a:hover, nav a.active{
 }
 
 /*calcutor-content*/
-.calc{
+.extra-content{
   width:96%;
   float:left;
   border-radius: 5px;
@@ -147,7 +146,7 @@ nav a:hover, nav a.active{
   text-align: center;
 }
 
-.calc h2{
+.extra-content h2{
   border-radius: 5px;
   background: #d3d3d3;
   text-align: center;
@@ -191,19 +190,22 @@ form{
 label{
   display:block;
   margin: 5px 0 5px 20px;
-  font: 18px;
   color: blue;
 }
 
 input{
   width:200px;
   margin: 0 0 0 20px;
+  border-color: black;
+  border-radius: 3px;
 }
 
 textarea{
   width: 400px;
   height: 200px;
   margin: 0 0 0 20px;
+  border-color: black;
+
 }
 
 fieldset{
@@ -247,8 +249,7 @@ footer p{
 
 /*compatibility*/
 
-@media only screen and (min-width:150px) and (max-width:600px)
-{
+@media only screen and (min-width:150px) and (max-width:600px){
 
 body{
   width:95%;
@@ -299,12 +300,11 @@ nav ul ul {
 
 }
 
-
-/*alt-content*/
-.bottombar{
-    margin-bottom:2%;
+/*map*/
+.map iframe{
+  width:auto;
+  height:auto;
 }
-
 
 /*banner*/
 
@@ -325,7 +325,6 @@ nav ul ul {
   padding-right: 5px;
 }
 
-/*sidebars*/
 
 
 /*Contact Form*/
