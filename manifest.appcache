@@ -11,5 +11,8 @@ script/dropdown.js
 index.html
 
 NETWORK:
+gyms.html
 
 FALLBACK:
+offline.html
+img/offline.png

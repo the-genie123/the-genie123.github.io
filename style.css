@@ -221,10 +221,7 @@ fieldset{
   width: 100px;
 }
 
-/*map*/
-.map{
-  display: none;
-}
+
 
 /*footer*/
 footer {
@@ -245,6 +242,11 @@ footer p{
   font-size: 90%;
 }
 
+/*offline image*/
+
+.offline p{
+  text-align: center;
+}
 
 
 /*compatibility*/
