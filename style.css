@@ -331,7 +331,7 @@ textarea{
 @media print
 {
 
-nav, iframe, .social-media, aside, footer{
+nav, iframe, .social-media, aside, footer, #location{
   display:none;
 }
 
@@ -351,6 +351,10 @@ h2{
 
 .banner{
   text-align: center;
+}
+
+.map iframe{
+  display: inline-block;
 }
 
 }

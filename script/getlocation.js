@@ -10,14 +10,14 @@ $(document).ready(function () {
         //var LatLongStr = geo_loc.split(",");
         var lat = position.coords.latitude;
         var long = position.coords.longitude;
-        console.log("setting long and alt");
+        //console.log("setting long and alt");
         //initializeCurrent(LatLongStr[0], LatLongStr[1]);
         initializeCurrent(lat, long);
     }, showError);
 
     //Check value is present or
     function initializeCurrent(currentlat, currentlong) {
-      console.log("checking current value");
+      //console.log("checking current value");
         currgeocoder = new google.maps.Geocoder();
         if (currentlat != '' && currentlong != '') {
             //call google api function
@@ -32,9 +32,9 @@ $(document).ready(function () {
             "location": location
         }, function (results, status) {
             if (status == "OK") {
-                console.log("im here");
-                console.log(results[1]);
-                $(x).html(results[1].formatted_address);
+                //console.log("im here");
+                //console.log(results[1]);
+                $(x).html("Your location: " + results[2].formatted_address);
             } else {
                 window.alert('Geocode failed due to: ' + status);
             }
