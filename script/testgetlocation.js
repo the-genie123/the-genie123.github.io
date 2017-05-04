@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     var currgeocoder;
-    var x = document.getElementById("location")
+    var x = document.getElementById("location");
 
 
     //Set geo location lat and long

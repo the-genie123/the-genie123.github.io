@@ -7,7 +7,6 @@ body{
   width:95%;
   margin:0px auto;
   clear: both;
-
 }
 
 /*Navgation bars*/
@@ -45,13 +44,13 @@ nav ul ul {
   position: absolute;
   width:auto;
   display: none;
-  background: #ff7400;
+  background: #ff4747;
   text-align: center;
 }
 
 nav ul ul li{
   display: block;
-  background: #ff7400;
+  background: #ff4747;
 }
 
 nav a:hover, nav a.active{
@@ -99,9 +98,6 @@ nav a:hover, nav a.active{
   width: 100%;
   }
 
-
-
-
 /*alt-content*/
 
 .alt-content{
@@ -124,7 +120,6 @@ nav a:hover, nav a.active{
 
 .video{
   text-align: center;
-
 }
 
 
@@ -172,8 +167,6 @@ sidebar h4{
   margin-bottom: 5px;
 }
 
-
-
 /*Contact Form*/
 .form-wrap{
   width: 100%;
@@ -220,9 +213,6 @@ fieldset{
 .btn{
   width: 100px;
 }
-
-
-
 
 /*footer*/
 footer {
